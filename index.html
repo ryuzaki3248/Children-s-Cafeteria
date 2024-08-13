@@ -1,63 +1,126 @@
+
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteer Organization</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<html lang="ja" class="js-disabled">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-	<header class="header font-round">
-		<!-- logo -->
-		<div class="header_item -logo">
-			<figure class="header_logo"><img src="images/icon.jpeg" alt="かっぱなかまのロゴ"></figure>
-		</div>
+		<title>○○○なかま</title>
+		<meta name="description" content="「〇〇〇なかま」は〇〇県〇〇市を中心に「子ども食堂」などのボランティアを行う団体のホームページです。" />
+		<meta name="format-detection" content="email=no,telephone=no,address=no" />
+		<!-- critical css -->
+		<style>
+</style>
+		<link rel="preload" href="./assets/css/style.css" as="style" />
+		<link rel="stylesheet" href="./assets/css/style.css" media="print" onload="this.media='all'" />
+		<link href="https://fonts.googleapis.com/css2?family=Itim&family=M+PLUS+Rounded+1c:wght@700;900&display=swap" rel="stylesheet" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#2b5797" />
+		<meta name="theme-color" content="#ffffff" />
+		<noscript><link rel="stylesheet" href="./assets/css/style.css" /></noscript>
+		<script>
+			document.documentElement.classList.remove('js-disabled');
+		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+		<script src="./assets/js/drawer.js" defer></script>
+		<script src="./assets/js/main.js" defer></script>
 
-		<!-- nav -->
-		<nav class="header_item -nav">
+		<!--[if lt IE 9]>
+			<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <link rel="stylesheet" href="styles.css">		
+	</head>
 
-			<!-- drawerNav -->
-			<div class="drawer">
-				MENU
+
+
+
+
+
+				<!-- header  -->
+				<header class="header font-round">
+					<!-- logo -->
+					<div class="header_item -logo">
+						<figure class="header_logo"><img src="images/icon.jpeg" alt="こども食堂のロゴ"></figure>
+					</div>
+
+					<!-- nav -->
+					<nav class="header_item -nav">
+						<!-- glovalNav -->
+						<ul class="glovalNav">
+							<li class="nav_item">
+								<a class="nav_link" href="#about">〇〇〇なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
+							</li>
+							<li class="nav_item">
+								<a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+							</li>
+							<li class="nav_item">
+								<a class="nav_link" href="#support">ご協力いただける方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+							</li>
+						</ul>
+
+						<!-- drawerNav -->
+						<div class="drawer">
+							<button id="js-drawerBtn" type="button" class="btn -drawer" aria-controls="drawerNav" aria-expanded="false">MENU</button>
+
+							<!-- drawerNav -->
+							<ul class="drawerNav">
+								<li class="nav_item">
+									<a class="nav_link" href="#about">かっぱなかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
+								</li>
+								<li class="nav_item">
+									<a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+								</li>
+								<li class="nav_item">
+									<a class="nav_link" href="#support">ご協力いただける方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+					<!-- btn -->
+					<div class="header_item -btn">
+						<div class="btn -primary">
+							<a href="#contactUs" class="btn_link">お問い合わせ</a>
+						</div>
+					</div>
+				</header>
+
+
+
+
+
+
+
+	<div class="hero">
+
+
+				<!-- h1 -->
+				<div class="hero_flex">
+					<div class="hero_wrap">
+						<h1 class="hero_title">〇〇〇なかま</h1>
+						<p class="hero_read font-round">
+							<span class="u-newLine">「〇〇〇なかま」は〇〇県〇〇市を中心に</span><br>
+							<span class="u-newLine">「子ども食堂」はじまりとした</span>
+							<span class="u-newLine">親御さん、お子さん、</span><br>
+							<span class="u-newLine">高齢者、地域の学生さんなど誰でも利用できる</span><br>
+							<span class="u-newLine">「みんなの食堂」を主に行うボランティア団体の</span>
+							<span class="u-newLine">ホームページです。</span>
+						</p>
+					</div>
+				</div>
 			</div>
-		</nav>
 
-		<!-- btn -->
-		<div class="header_item -btn">
-			<div class="btn -primary">
-				<a href="#contactUs" class="btn_link">お問い合わせ</a>
-			</div>
-		</div>
-	</header>
+			
 
-<div class="hero">
-	<div class="hero_wrap">
-		<h1 class="hero_title">○○○なかま</h1>
-		<p class="hero_read font-round">
-			<span class="u-newLine">「○○○なかま」は〇〇県〇〇市を中心に</span><br>
-			<span class="u-newLine">「子ども食堂」はじまりとした</span>
-			<span class="u-newLine">親御さん、お子さん、</span><br>
-			<span class="u-newLine">高齢者、地域の学生さんなど誰でも利用できる</span><br>
-			<span class="u-newLine">「みんなの食堂」を主に行うボランティア団体の</span>
-			<span class="u-newLine">ホームページです。</span>
-		</p>
-	</div>
-</div>
+			<div class="scroll-container">
+				<p class="scroll-text">scroll</p>
+				<div class="scroll-arrow">∨</div>
+			</div>		
 
-<div class="scroll-container">
-	<p class="scroll-text">scroll</p>
-	<div class="scroll-arrow">∨</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+			
