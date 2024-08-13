@@ -1,49 +1,142 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+.header_logo {
+  margin-left: 20px;
 }
 
-header {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 0;
+.header_logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header_item.-logo {
+  margin-right: auto;
+}
+
+.header_item.-nav {
+  margin-left: auto;
+}
+
+.header_item.-btn {
+  margin-left: 10px;
+  /* padding: 1.2em 1.6em; */
+  font-size: 20px;
+}
+.drawer {
+  font-weight: bold;
+  color: #3eb382;
+}
+
+.btn.-primary {
+  background-color: #3eb382;
+  border-radius: 8px;
+  padding: 10px 20px;
   text-align: center;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: #333;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
+.btn.-primary .btn_link {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
+.hero_title {
+  font-size: 60px;
+  color: #3eb382;
   text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+  margin: 0 auto;
+}
+
+.hero_read {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("/Users/t/Lancers/Children-s-Cafeteria/images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  height: 450px;
+}
+
+.hero_wrap {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 0;
+  margin-top: 0;
+}
+
+/* 大型デスクトップ（1200px以上） */
+@media (min-width: 1200px) {
+  .hero_title {
+    font-size: 70px;
+  }
+
+  .btn.-primary {
+    font-size: 22px;
+    padding: 14px 28px;
+  }
+}
+
+/* 中型デスクトップとラップトップ（992px - 1199px） */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero_title {
+    font-size: 60px;
+  }
+
+  .btn.-primary {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+}
+
+/* タブレット（768px - 991px） */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero_title {
+    font-size: 50px;
+  }
+
+  .btn.-primary {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+/* スマートフォン（576px - 767px） */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero_title {
+    font-size: 40px;
+  }
+
+  .btn.-primary {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/* 超小型デバイス（575px以下） */
+@media (max-width: 575px) {
+  .hero_title {
+    font-size: 30px;
+  }
+
+  .btn.-primary {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .hero {
+    height: 350px;
+  }
 }
