@@ -59,7 +59,7 @@
 }
 
 .hero {
-  background-image: url("/Users/t/Lancers/Children-s-Cafeteria/images/hero.jpeg");
+  background-image: url("images/hero.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
