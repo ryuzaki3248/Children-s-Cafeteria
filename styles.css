@@ -140,3 +140,31 @@
     height: 350px;
   }
 }
+
+.scroll-container {
+  text-align: center;
+  position: relative;
+  animation: moveUpDown 2s infinite;
+}
+
+.scroll-text {
+  font-size: 20px;
+  color: #3eb382;
+  margin: 0;
+}
+
+.scroll-arrow {
+  font-size: 30px;
+  color: #3eb382;
+  margin-top: 5px;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
