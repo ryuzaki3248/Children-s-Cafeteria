@@ -1,6 +1,6 @@
 .header_logo img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
 }
 
@@ -25,11 +25,11 @@
 }
 .drawer {
   font-weight: bold;
-  color: green;
+  color: #3eb382;
 }
 
 .btn.-primary {
-  background-color: green;
+  background-color: #3eb382;
   border-radius: 8px;
   padding: 10px 20px;
   text-align: center;
@@ -39,4 +39,36 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.hero_title {
+  font-size: 60px;
+  color: #3eb382;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero_read {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("/Users/t/Lancers/Children-s-Cafeteria/images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  height: 450px;
+}
+
+.hero_wrap {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 0;
+  margin-top: 0;
 }
