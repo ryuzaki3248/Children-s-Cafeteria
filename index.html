@@ -288,4 +288,87 @@
 						<span>下記のお問合せフォーム、または各種問合せ項目よりご連絡をお願いします。</span>
 					</p>
 				</div>
-			</section>			
+			</section>	
+			
+
+
+			<section id="contactUs" class="l-section -contactUs background -white">
+				<div class="background -contact"></div>
+
+				<div class="l-inner -spS -pcS">
+					<h2 class="h2Box -mb">
+						<span class="h2Box_icon"><i class="iconSet-paper_plane"></i></span><span class="h2Box_subText font-hand">Contact Us</span><span class="h2Box_mainText">お問い合わせ</span>
+					</h2>
+
+					<p class="textBox">
+						<span>ボランティアの参加、食材の提供などしてくださる方、</span><span>ご質問、ご相談など気軽にお問合せください。</span>
+					</p>
+
+					<div class="contact_formBox">
+						<form class="form projectForm" name="kappa-form" action="mail.php" method="post" enctype="multipart/form-data" autocomplete="on">
+							<!-- name -->
+							<dl class="box">
+								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="name">お名前（漢字）</label></dt>
+								<dd class="item"><input id="name" name="お名前" type="text" value="" placeholder="例：山田 拓也" size="20" required=""></dd>
+							</dl>
+              <br>
+
+							<!-- mail -->
+							<dl class="box">
+								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="email">メールアドレス</label></dt>
+								<dd class="item">
+									<input id="email" name="Email" type="email" value="" placeholder="例：sample@example.com" size="20" required="">
+								</dd>
+							</dl>
+							<br>
+
+							<!-- tel -->
+							<dl class="box">
+								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="tel">電話番号</label></dt>
+								<dd class="item">
+									<input id="tel" name="電話番号" type="tel" value="" placeholder="例：00011112222" size="20" required="">
+								</dd>
+							</dl>
+							<br>
+
+							<!-- comment -->
+							<dl class="box">
+								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="comment">お問い合わせ内容</label></dt>
+								<dd class="item">
+									<textarea id="comment" name="お問い合わせ内容" rows="15" cols="30" placeholder="例：ボランティアに参加したい" required=""></textarea>
+								</dd>
+							</dl>
+							<br>
+
+							<!-- submit -->
+							<div class="box -center"><input class="btn -submit" type="submit" value="お問い合わせする"></div>
+							<br>
+
+						</form>
+					</div>
+
+					<!-- text -->
+					<div class="contact_textBox">
+						<div class="contact_box">
+							<div class="contact_icon"><i class="iconSet-paper_plane"></i></div>
+							<p class="contact_text">
+								内容を確認して担当者よりご連絡させていただきます。少々お時間いただきます。<br>返信がない場合、下記のアドレスまでご連絡ください。<br>
+								<span class="contact_address font-round">〇〇〇〇@gmail.com</span>
+							</p>
+						</div>
+
+						<br>
+
+						<div class="contact_box">
+							<p class="contact_text">
+								<span>LINEでのお問合せも対応しております。</span>
+								<span>お気軽にご連絡ください。</span>
+								</p><p></p>
+								<a href="https://lin.ee/Yp2OYrv">
+									<img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+								</a>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</section>
