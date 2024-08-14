@@ -38,6 +38,8 @@
 
 	<body>
 
+
+
 				<!-- header  -->
 				<header class="header font-round">
 					<!-- logo -->
@@ -87,20 +89,7 @@
 					</div>
 				</header>
 
-				<script>
-					document.getElementById('js-drawerBtn').addEventListener('click', function() {
-							var drawerNav = document.getElementById('drawerNav');
-							var isExpanded = this.getAttribute('aria-expanded') === 'true';
-			
-							if (isExpanded) {
-									drawerNav.style.display = 'none';
-									this.setAttribute('aria-expanded', 'false');
-							} else {
-									drawerNav.style.display = 'block';
-									this.setAttribute('aria-expanded', 'true');
-							}
-					});
-			</script>			
+		
 
 	<div class="hero">
 				<!-- h1 -->
@@ -439,5 +428,19 @@
 			
 			<br>
 
+			<script>
+				document.getElementById('js-drawerBtn').addEventListener('click', function() {
+						var drawerNav = document.getElementById('drawerNav');
+						var isExpanded = this.getAttribute('aria-expanded') === 'true';
+		
+						if (isExpanded) {
+								drawerNav.style.display = 'none';
+								this.setAttribute('aria-expanded', 'false');
+						} else {
+								drawerNav.style.display = 'block';
+								this.setAttribute('aria-expanded', 'true');
+						}
+				});
+		</script>		
 			</body>
 </html>
