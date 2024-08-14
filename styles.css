@@ -791,3 +791,29 @@ button {
     transform: translateY(10px);
   }
 }
+
+.background.-blue {
+  position: relative;
+  background-color: #edf7fa;
+}
+
+.sns_twiterIcon {
+  display: flex;
+  justify-content: center; /* 親要素内で中央揃え */
+  margin: 20px auto; /* 上下に20pxのマージンを設定し、左右は自動で中央揃え */
+  width: 50px; /* 要素の幅を調整、必要に応じて変更 */
+}
+
+.sns_twiterIcon img {
+  width: 100%; /* 画像を親要素の幅にフィットさせる */
+  height: auto; /* 画像の縦横比を保持して高さを自動調整 */
+  border-radius: 50%; /* 画像を丸くする（アイコンが円形の場合） */
+}
+
+.sns_link {
+  display: block; /* クリック可能な領域を広げるためにリンクをブロック要素に */
+}
+
+.textBox.-center {
+  text-align: center;
+}
