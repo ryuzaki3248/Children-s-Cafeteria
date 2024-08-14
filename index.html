@@ -55,17 +55,11 @@
                 <button id="js-drawerBtn" type="button" class="btn -drawer" aria-controls="drawerNav" aria-expanded="false">MENU</button>
 
                 <!-- drawerNav -->
-                <ul class="drawerNav" id="drawerNav" style="display: none;">
-                    <li class="nav_item">
-                        <a class="nav_link" href="#about">✗なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="#support">ご協力いただける方へ<br><i class="iconSet-chevron-circle-down"></i></a>
-                    </li>
-                </ul>
+								<ul id="drawerNav" class="menu-items">
+									<li><a href="#about">なかまについて</a></li>
+									<li><a href="#toUser">ご利用の方へ</a></li>
+									<li><a href="#support">ご協力いただける方へ</a></li>
+							</ul>
             </div>
         </nav>
 
@@ -400,15 +394,7 @@
     <script>
 			document.getElementById('js-drawerBtn').addEventListener('click', function() {
 					var drawerNav = document.getElementById('drawerNav');
-					var isExpanded = this.getAttribute('aria-expanded') === 'true';
-
-					if (isExpanded) {
-							drawerNav.style.display = 'none';
-							this.setAttribute('aria-expanded', 'false');
-					} else {
-							drawerNav.style.display = 'block';
-							this.setAttribute('aria-expanded', 'true');
-					}
+					drawerNav.classList.toggle('show'); // クラスの切り替えで表示/非表示を制御
 			});
 	</script>
 </body>
