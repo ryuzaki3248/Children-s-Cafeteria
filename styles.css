@@ -817,3 +817,8 @@ button {
 .textBox.-center {
   text-align: center;
 }
+
+.background.-green {
+  position: relative;
+  background-color: #ebf7ee;
+}
