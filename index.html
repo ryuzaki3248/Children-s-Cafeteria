@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="styles.css">		
 	</head>
 
+	<body>
+
 				<!-- header  -->
 				<header class="header font-round">
 					<!-- logo -->
@@ -48,7 +50,7 @@
 						<!-- glovalNav -->
 						<ul class="glovalNav">
 							<li class="nav_item">
-								<a class="nav_link" href="#about">〇〇〇なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
+								<a class="nav_link" href="#about">〇〇〇◯なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
 							</li>
 							<li class="nav_item">
 								<a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
@@ -63,9 +65,9 @@
 							<button id="js-drawerBtn" type="button" class="btn -drawer" aria-controls="drawerNav" aria-expanded="false">MENU</button>
 
 							<!-- drawerNav -->
-							<ul class="drawerNav">
+							<ul class="drawerNav" id="drawerNav" style="display: none;">
 								<li class="nav_item">
-									<a class="nav_link" href="#about">かっぱなかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
+									<a class="nav_link" href="#about">〇〇〇なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
 								</li>
 								<li class="nav_item">
 									<a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
@@ -84,6 +86,21 @@
 						</div>
 					</div>
 				</header>
+
+				<script>
+					document.getElementById('js-drawerBtn').addEventListener('click', function() {
+							var drawerNav = document.getElementById('drawerNav');
+							var isExpanded = this.getAttribute('aria-expanded') === 'true';
+			
+							if (isExpanded) {
+									drawerNav.style.display = 'none';
+									this.setAttribute('aria-expanded', 'false');
+							} else {
+									drawerNav.style.display = 'block';
+									this.setAttribute('aria-expanded', 'true');
+							}
+					});
+			</script>			
 
 	<div class="hero">
 				<!-- h1 -->
@@ -421,3 +438,6 @@
 			</div>			
 			
 			<br>
+
+			</body>
+</html>
