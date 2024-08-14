@@ -666,8 +666,11 @@ button {
   height: calc(95vh - 4.5rem);
   max-height: 50rem;
   background-color: #afd4dd;
-  background-image: url(images/hero.jpeg), url(assets/img/bg/trees.svg),
-    url(assets/img/bg/green_mounten.svg), url(assets/img/bg/sky_cloud.svg);
+  background-image: url(images/hero.jpeg)
+  /* ,
+  url(assets/img/bg/trees.svg),
+    url(assets/img/bg/green_mounten.svg), url(assets/img/bg/sky_cloud.svg) */
+    ;
   background-repeat: repeat-x;
   background-position: bottom, bottom -8vh center, bottom -8vh center,
     bottom -8vh center;
@@ -821,4 +824,181 @@ button {
 .background.-green {
   position: relative;
   background-color: #ebf7ee;
+}
+
+.requiredItem.-required {
+  background-color: #f09d89;
+}
+
+.requiredItem {
+  display: inline-block;
+  padding: 0.2em 1em;
+  margin-right: 1em;
+  font-size: 0.9em;
+  color: #fff;
+  border-radius: 10em;
+}
+
+.form {
+  text-align: left;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.8em 1.2em;
+  background-color: #eee;
+  border: 0.125rem solid transparent;
+  border-radius: 1.875rem;
+  outline: 0;
+  -webkit-transition: border 0.2s ease-out;
+  transition: border 0.2s ease-out;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+button,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.projectForm .title {
+  margin-bottom: 0.8em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 0.8em 1.2em;
+  resize: none;
+  background-color: #eee;
+  border: 0.125rem solid transparent;
+  border-radius: 1.875rem;
+  outline: 0;
+  -webkit-transition: border 0.2s ease-out;
+  transition: border 0.2s ease-out;
+}
+
+.btn.-submit {
+  background-image: -webkit-gradient(
+
+    right top,
+    from(
+      #61c26f,
+    ),
+    to(
+      #7acc66,
+    )
+  );
+  background-image: -webkit-linear-gradient(left, #61c26f, #7acc66);
+  background-image: linear-gradient(to right, #61c26f, #7acc66);
+  color: #ffffff; /* 文字色を白に設定 */ left top,
+}
+
+.drawerNav {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.drawerNav.show {
+  display: block; /* これを追加する */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.drawerNav.show {
+  display: block;
+}
+
+.menu-items {
+  display: none; /* 初期状態では非表示 */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-items li {
+  margin: 10px 0;
+}
+.menu-items a {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 18px;
+}
+.menu-items.show {
+  display: block; /* ボタンがクリックされたときに表示 */
 }
