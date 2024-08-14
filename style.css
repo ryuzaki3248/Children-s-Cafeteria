@@ -666,8 +666,11 @@ button {
   height: calc(95vh - 4.5rem);
   max-height: 50rem;
   background-color: #afd4dd;
-  background-image: url(images/hero.jpeg), url(assets/img/bg/trees.svg),
-    url(assets/img/bg/green_mounten.svg), url(assets/img/bg/sky_cloud.svg);
+  background-image: url(images/hero.jpeg)
+  /* ,
+  url(assets/img/bg/trees.svg),
+    url(assets/img/bg/green_mounten.svg), url(assets/img/bg/sky_cloud.svg) */
+    ;
   background-repeat: repeat-x;
   background-position: bottom, bottom -8vh center, bottom -8vh center,
     bottom -8vh center;
@@ -965,3 +968,19 @@ textarea {
   color: #ffffff; /* 文字色を白に設定 */ left top,
 }
 
+.drawerNav {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.drawerNav.show {
+  display: block; /* これを追加する */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.drawerNav.show {
+  display: block;
+}

@@ -1,446 +1,415 @@
 <!DOCTYPE html>
-<html lang="ja" class="js-disabled">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-		<title>○○○なかま</title>
-		<meta name="description" content="「〇〇〇なかま」は〇〇県〇〇市を中心に「子ども食堂」などのボランティアを行う団体のホームページです。" />
-		<meta name="format-detection" content="email=no,telephone=no,address=no" />
-		<!-- critical css -->
-		<style>
-</style>
-		<link rel="preload" href="./assets/css/style.css" as="style" />
-		<link rel="stylesheet" href="./assets/css/style.css" media="print" onload="this.media='all'" />
-		<link href="https://fonts.googleapis.com/css2?family=Itim&family=M+PLUS+Rounded+1c:wght@700;900&display=swap" rel="stylesheet" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-		<meta name="msapplication-TileColor" content="#2b5797" />
-		<meta name="theme-color" content="#ffffff" />
-		<noscript><link rel="stylesheet" href="./assets/css/style.css" /></noscript>
-		<script>
-			document.documentElement.classList.remove('js-disabled');
-		</script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
-		<script src="./assets/js/drawer.js" defer></script>
-		<script src="./assets/js/main.js" defer></script>
+    <title>○○○なかま</title>
+    <meta name="description" content="「〇〇〇なかま」は〇〇県〇〇市を中心に「子ども食堂」などのボランティアを行う団体のホームページです。" />
+    <meta name="format-detection" content="email=no,telephone=no,address=no" />
+    
+    <link rel="preload" href="./style.css" as="style" />
+    <link rel="stylesheet" href="./style.css" media="print" onload="this.media='all'" />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=M+PLUS+Rounded+1c:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <noscript><link rel="stylesheet" href="./style.css" /></noscript>
+    <script>
+        document.documentElement.classList.remove('js-disabled');
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+    <script src="./drawer.js" defer></script>
+</head>
 
-		<!--[if lt IE 9]>
-			<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-    <link rel="stylesheet" href="styles.css">		
-	</head>
+<body>
+    <!-- header  -->
+    <header class="header font-round">
+        <!-- logo -->
+        <div class="header_item -logo">
+            <figure class="header_logo"><img src="images/icon.jpeg" alt="こども食堂のロゴ"></figure>
+        </div>
 
-	<body>
+        <!-- nav -->
+        <nav class="header_item -nav">
+            <!-- glovalNav -->
+            <ul class="glovalNav">
+                <li class="nav_item">
+                    <a class="nav_link" href="#about">〇〇〇◯なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#support">ご協力いただける方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+                </li>
+            </ul>
 
+            <!-- drawerNav -->
+            <div class="drawer">
+                <button id="js-drawerBtn" type="button" class="btn -drawer" aria-controls="drawerNav" aria-expanded="false">MENU</button>
 
+                <!-- drawerNav -->
+                <ul class="drawerNav" id="drawerNav" style="display: none;">
+                    <li class="nav_item">
+                        <a class="nav_link" href="#about">✗なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#support">ご協力いただける方へ<br><i class="iconSet-chevron-circle-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-				<!-- header  -->
-				<header class="header font-round">
-					<!-- logo -->
-					<div class="header_item -logo">
-						<figure class="header_logo"><img src="images/icon.jpeg" alt="こども食堂のロゴ"></figure>
-					</div>
+        <!-- btn -->
+        <div class="header_item -btn">
+            <div class="btn -primary">
+                <a href="#contactUs" class="btn_link">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
 
-					<!-- nav -->
-					<nav class="header_item -nav">
-						<!-- glovalNav -->
-						<ul class="glovalNav">
-							<li class="nav_item">
-								<a class="nav_link" href="#about">〇〇〇◯なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
-							</li>
-							<li class="nav_item">
-								<a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
-							</li>
-							<li class="nav_item">
-								<a class="nav_link" href="#support">ご協力いただける方へ<br><i class="iconSet-chevron-circle-down"></i></a>
-							</li>
-						</ul>
+    <!-- Hero section -->
+    <div class="hero">
+        <div class="hero_flex">
+            <div class="hero_wrap">
+                <h1 class="hero_title">〇〇〇なかま</h1>
+                <p class="hero_read font-round">
+                    <span class="u-newLine">「〇〇〇なかま」は〇〇県〇〇市を中心に</span><br>
+                    <span class="u-newLine">「子ども食堂」はじまりとした</span>
+                    <span class="u-newLine">親御さん、お子さん、</span><br>
+                    <span class="u-newLine">高齢者、地域の学生さんなど誰でも利用できる</span><br>
+                    <span class="u-newLine">「みんなの食堂」を主に行うボランティア団体の</span>
+                    <span class="u-newLine">ホームページです。</span>
+                </p>
+            </div>
+        </div>
+    </div>
 
-						<!-- drawerNav -->
-						<div class="drawer">
-							<button id="js-drawerBtn" type="button" class="btn -drawer" aria-controls="drawerNav" aria-expanded="false">MENU</button>
+    <!-- Scroll section -->
+    <div class="scroll-container">
+        <p class="scroll-text">scroll</p>
+        <div class="scroll-arrow">∨</div>
+    </div>					
 
-							<!-- drawerNav -->
-							<ul class="drawerNav" id="drawerNav" style="display: none;">
-								<li class="nav_item">
-									<a class="nav_link" href="#about">〇〇〇なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
-								</li>
-								<li class="nav_item">
-									<a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
-								</li>
-								<li class="nav_item">
-									<a class="nav_link" href="#support">ご協力いただける方へ<br><i class="iconSet-chevron-circle-down"></i></a>
-								</li>
-							</ul>
-						</div>
-					</nav>
+    <!-- About section -->
+    <section id="about" class="l-section background">
+        <div class="l-inner -spS -pcS">
+            <h2 class="h2Box -mb">
+                <figure class="header_logo" style="margin: 0 auto; text-align: center;">
+                    <img src="images/icon.jpeg" alt="こども食堂のロゴ">
+                </figure>
+                <span class="h2Box_subText font-hand">About us “〇〇〇 Nakama“</span>
+                <span class="h2Box_mainText"><span class="u-newLine">私たち「〇〇〇なかま」</span><span class="u-newLine">について</span></span>
+            </h2>
 
-					<!-- btn -->
-					<div class="header_item -btn">
-						<div class="btn -primary">
-							<a href="#contactUs" class="btn_link">お問い合わせ</a>
-						</div>
-					</div>
-				</header>
+            <p class="textBox">
+                <span>「〇〇〇なかま」では子ども達にワイワイがやがや</span>
+                <span>賑やかに食卓を囲んでもらいたい。</span>
+                <span>日頃忙しいお母さんに一食分でもゆっくりすごしてもらいたい。</span><br>
+                <span>独り身の高齢者の方に寄り添って食事を供にできたら、</span>
+                <span>栄養の偏った生活をしている学生さんに栄養のある食事を、</span>
+                <span>そんな思いから「みんなの食堂」を企画しています。</span><br>
+                <span>ごはんや温かな団らんを通じて、みんなが笑顔になれる場所を目指します。</span>
+            </p>
 
-		
+            <p class="textBox -icon">
+                <span>豊かだと思われているこの日本で、</span><span>統計的には子どもの7人に1人が</span><span>「相対的貧困」の状態で暮らしているといわれています。</span><span>特にひとり親家庭において、その確率は高まってると聞きます。</span>
+                <span>加えて地域においては、高齢者の孤立、共働き家庭の増加など、</span><span>様々な事案が報道されるようになりました。</span>
+            </p>
 
-	<div class="hero">
-				<!-- h1 -->
-				<div class="hero_flex">
-					<div class="hero_wrap">
-						<h1 class="hero_title">〇〇〇なかま</h1>
-						<p class="hero_read font-round">
-							<span class="u-newLine">「〇〇〇なかま」は〇〇県〇〇市を中心に</span><br>
-							<span class="u-newLine">「子ども食堂」はじまりとした</span>
-							<span class="u-newLine">親御さん、お子さん、</span><br>
-							<span class="u-newLine">高齢者、地域の学生さんなど誰でも利用できる</span><br>
-							<span class="u-newLine">「みんなの食堂」を主に行うボランティア団体の</span>
-							<span class="u-newLine">ホームページです。</span>
-						</p>
-					</div>
-				</div>
-			</div>
+            <p class="textBox -mt">
+                <span>地域の皆さんや支援者の方々と支えあい、</span>
+                <span>ここで一緒に一食ご飯を食べること、</span>
+                <span>「こども食堂」をはじめ「みんなの食堂」という場を設けることで、 </span>
+                <span>様々な人同士が繋がり笑顔が増える機会が増えれば幸いです。</span>
+            </p>
 
-			<div class="scroll-container">
-				<p class="scroll-text">scroll</p>
-				<div class="scroll-arrow">∨</div>
-			</div>					
+            <p class="textBox -icon">
+                <span>食事は感染症対策を徹底し衛生を第一に重視します。</span>
+                <span>その上で栄養価が高く、地のもの、旬のものを、</span>
+                <span>提供できるように努めてまいります。</span><br>
+                <span>もちろん美味しさも追及しますよ。</span>
+            </p>
+        </div>
+    </section>			
 
-			<section id="about" class="l-section background">
-				<div class="l-inner -spS -pcS">
-					<h2 class="h2Box -mb">
-						<figure class="header_logo" style="margin: 0 auto; text-align: center;">
-							<img src="images/icon.jpeg" alt="こども食堂のロゴ">
-					</figure>
-					
-						<span class="h2Box_subText font-hand">About us “〇〇〇 Nakama“</span><span class="h2Box_mainText"><span class="u-newLine">私たち「〇〇〇なかま」</span><span class="u-newLine">について</span></span>
-					</h2>
+    <!-- SNS section -->
+    <section class="l-section background -blue">
+        <div class="l-inner -spS -pcS">
+            <h2 class="h2Box -blue -mb">
+                <span class="h2Box_icon"><i class="iconSet-retweet"></i></span><span class="h2Box_subText font-hand">SNS</span><span class="h2Box_mainText">〇〇〇なかまのX</span>
+            </h2>
 
-					<p class="textBox">
-						<span>「〇〇〇なかま」では子ども達にワイワイがやがや</span>
-						<span>賑やかに食卓を囲んでもらいたい。</span>
-						<span>日頃忙しいお母さんに一食分でもゆっくりすごしてもらいたい。</span><br>
-						<span>独り身の高齢者の方に寄り添って食事を供にできたら、</span>
-						<span>栄養の偏った生活をしている学生さんに栄養のある食事を、</span>
-						<span>そんな思いから「みんなの食堂」を企画しています。</span><br>
-						<span>ごはんや温かな団らんを通じて、みんなが笑顔になれる場所を目指します。</span>
-					</p>
+            <p class="textBox">
+                <span>開催場所、スケジュール、メニューはX上で随時お知らせしていきます。</span><span>よろしければフォローまたはチェックをお願いします。</span>
+            </p>
 
-					<p class="textBox -icon">
-						<span>豊かだと思われているこの日本で、</span><span>統計的には子どもの7人に1人が</span><span>「相対的貧困」の状態で暮らしているといわれています。</span><span>特にひとり親家庭において、その確率は高まってると聞きます。</span>
-						<span>加えて地域においては、高齢者の孤立、共働き家庭の増加など、</span><span>様々な事案が報道されるようになりました。</span>
-					</p>
+            <!-- textBox -figure -->
+            <div class="textBox -center -mt">
+                <figure class="sns_twiterIcon">
+                    <a class="sns_link" href="https://twitter.com/kappafriendship">
+                        <img src="images/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="Xのアイコン" decoding="async">
+                    </a>
+                </figure>
 
-					<p class="textBox -mt">
-						<span>地域の皆さんや支援者の方々と支えあい、</span>
-						<span>ここで一緒に一食ご飯を食べること、</span>
-						<span>「こども食堂」をはじめ「みんなの食堂」という場を設けることで、 </span>
-						<span>様々な人同士が繋がり笑顔が増える機会が増えれば幸いです。</span>
-					</p>
+                <p class="sns_acountText font-round">＠〇〇〇friendship</p>
+                <p class="u-textS">クリックするとXへリンクします。</p>
+            </div>
 
-					<p class="textBox -icon">
-						<span>食事は感染症対策を徹底し衛生を第一に重視します。</span>
-						<span>その上で栄養価が高く、地のもの、旬のものを、</span>
-						<span>提供できるように努めてまいります。</span><br>
-						<span>もちろん美味しさも追及しますよ。</span>
-					</p>
-				</div>
-			</section>			
+            <p class="textBox -mt">
+                <span>子ども食堂、みんなの食堂以外にも地域に貢献できるような地域の清掃活動や</span>
+                <span>無料子ども学習塾、落語・講談会、各種カルチャー教室や</span>
+                <span>レクレーションなど各年代の方が楽しめるような企画をして参ります。</span>
+            </p>
+        </div>
+    </section>			
 
-			<section class="l-section background -blue">
-				<div class="l-inner -spS -pcS">
-					<h2 class="h2Box -blue -mb">
-						<span class="h2Box_icon"><i class="iconSet-retweet"></i></span><span class="h2Box_subText font-hand">SNS</span><span class="h2Box_mainText">〇〇〇なかまのX</span>
-					</h2>
+    <!-- To Users section -->
+    <section id="toUser" class="l-section background -white">
+        <div class="l-inner -spS -pcS">
+            <h2 class="h2Box -mb">
+                <figure class="header_logo" style="margin: 0 auto; text-align: center;">
+                    <img src="images/heart_hug_person_48475-101x101.jpg" alt="人のアイコン">
+                </figure>						
+                <span class="h2Box_icon"><i class="iconSet-users"></i></span><span class="h2Box_subText font-hand">To users</span><span class="h2Box_mainText">ご利用の方へ</span>
+            </h2>
 
-					<p class="textBox">
-						<span>開催場所、スケジュール、メニューはX上で随時お知らせしていきます。</span><span>よろしければフォローまたはチェックをお願いします。</span>
-					</p>
+            <p class="textBox">
+                <span>年代を越えて地域で協力しあい皆で仲良く過ごしましょう。</span>
+                <span>参加ご利用の際には社会福祉協議会を通じ</span>
+                <span>ボランティア行事用保険に加入し開催しますので、事前予約制となります。</span>
+                <span>開催前に参加の旨のご連絡をお願いします。</span>
+            </p>
 
-					<!-- textBox -figure -->
-					<div class="textBox -center -mt">
-						<figure class="sns_twiterIcon">
-							<a class="sns_link" href="https://twitter.com/kappafriendship">
-								<img src="images/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="Xのアイコン" decoding="async">
-							</a>
-						</figure>
+            <!-- PARTICIPATE -->
+            <section class="toUser_item">
+                <div class="background -participate">
+                    <h3 class="h3Box -mb">
+                        <span class="h3Box_icon" style="color: #3eb382;"><i class="iconSet-user"></i></span>
+                        <span class="h3Box_subText font-hand" style="color: #3eb382;">People who can participate</span>
+                        <span class="h3Box_mainText" style="color: #3eb382;"></span>
+                        <br>
+                        参加できる人
+                    </h3>
 
-						<p class="sns_acountText font-round">＠〇〇〇friendship</p>
-						<p class="u-textS">クリックするとXへリンクします。</p>
-					</div>
+                    <p class="participate_read font-round">
+                        <span>親御さん、お子さん、高齢者の方、地域の学生さんなど</span>
+                        <span>どなたでも参加できます。</span><br>
+                        <span>お友達などお誘いして気軽に</span>
+                        <span>ご参加ください。</span>
+                    </p>
 
-					<p class="textBox -mt">
-						<span>子ども食堂、みんなの食堂以外にも地域に貢献できるような地域の清掃活動や</span>
-						<span>無料子ども学習塾、落語・講談会、各種カルチャー教室や</span>
-						<span>レクレーションなど各年代の方が楽しめるような企画をして参ります。</span>
-					</p>
-				</div>
-			</section>			
+                    <!-- illust -->
+                    <figure class="participate_img">
+                        <img src="images/thumbnail_kakedasu_people.jpg" alt="幼児から高校生までの子ども達のイラスト" decoding="async">
+                    </figure>
+                </div>
 
-			
-			<section id="toUser" class="l-section background -white">
-				<div class="l-inner -spS -pcS">
-					<h2 class="h2Box -mb">
-						<figure class="header_logo" style="margin: 0 auto; text-align: center;">
-							<img src="images/heart_hug_person_48475-101x101.jpg" alt="人のアイコン">
-					</figure>						
-						<span class="h2Box_icon"><i class="iconSet-users"></i></span><span class="h2Box_subText font-hand">To users</span><span class="h2Box_mainText">ご利用の方へ</span>
-					</h2>
+                <!-- text -->
+                <p class="textBox -mt">
+                    <span>※一人で参加される場合は、</span>
+                    <span>身の回りの事が自分自身でできる</span>
+                    <span>お子様に限定させていただきます。</span>
+                </p>
+            </section>
 
-					<p class="textBox">
-						<span>年代を越えて地域で協力しあい皆で仲良く過ごしましょう。</span>
-						<span>参加ご利用の際には社会福祉協議会を通じ</span>
-						<span>ボランティア行事用保険に加入し開催しますので、事前予約制となります。</span>
-						<span>開催前に参加の旨のご連絡をお願いします。</span>
-					</p>
+            <!-- FREE -->
+            <section class="toUser_item">
+                <div class="background -free">
+                    <h3 class="h3Box -mb">
+                        <span class="h3Box_icon"><i class="iconSet-pig"></i></span>
+                        <span class="h3Box_subText font-hand" style="color: #3eb382;">Participation fee</span>
+                        <br>
+                        <span class="h3Box_mainText">参加費用</span>
+                    </h3>
+                    <p class="free_read font-round" style="color: #3eb382;">
+                        <span>基本的に無料で</span><br>
+                        <span>ご参加いただけます。</span>
+                    </p>
+                    <div class="l-flex -centerStretch">
+                        <!-- 01 -->
+                        <div class="free_flexItem">
+                            <figure class="free_img -childrens">
+                                <img src="images/pose_gutspose_family_set1.jpeg" alt="4人のイラスト" decoding="async">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>			
 
-					<!-- PARTICIPATE -->
-					<section class="toUser_item">
-						<div class="background -participate">
-							<h3 class="h3Box -mb">
-								<span class="h3Box_icon" style="color: #3eb382;"><i class="iconSet-user"></i></span>
-<span class="h3Box_subText font-hand" style="color: #3eb382;">People who can participate</span>
-<span class="h3Box_mainText" style="color: #3eb382;"></span>
-									<br>
-									参加できる人</span>
-							</h3>
+    <!-- Support section -->
+    <section id="support" class="l-section background -green">
+        <div class="l-inner -spS -pcS">
+            <h2 class="h2Box -mb">
+                <span class="h2Box_icon"><i class="iconSet-heart-half"></i></span><span class="h2Box_subText font-hand">To those who can cooperate and support</span><span class="h2Box_mainText"><span class="u-newLine">ご協力・ご支援</span><span class="u-newLine">いただける方へ</span></span>
+            </h2>
 
-							<!-- read -->
-							<p class="participate_read font-round">
-								<span>親御さん、お子さん、高齢者の方、地域の学生さんなど</span>
-								<span>どなたでも参加できます。</span><br>
-								<span>お友達などお誘いして気軽に</span>
-								<span>ご参加ください。</span>
-							</p>
+            <p class="textBox">
+                <span>「〇〇〇なかま」では一緒にボランティア活動をしていただける方、</span>
+                <span>食材などの支援、寄付をしてくださる方を募集しております。</span><br>
+                <span>子ども食堂は大勢のボランティアと</span>
+                <span>全国からお送り頂く食材のご支援で成り立っています。</span><br>
+                <span>皆さまの応援が活動を持続継続する力となります。</span>
+            </p>
+            <p class="textBox -mt">
+                <span>運営のお手伝いの参加ご希望の方は 簡単な調理、盛り付け、片付け清掃、</span>
+                <span>などなど簡単にできることが沢山あります。</span><br>
+                <span>簡単にできることが沢山ありますので是非ご参加いただき、</span>
+                <span>地域の皆様の笑顔を一つでも増やせるように</span>
+                <span>一緒に取り組みに参加してみませんか？</span>
+            </p>
+            <p class="textBox -mt">
+                <span>支援や寄付などをしていただける方はお手数をお掛けし恐縮ですが</span>
+                <span>下記のお問合せフォーム、または各種問合せ項目よりご連絡をお願いします。</span>
+            </p>
+        </div>
+    </section>			
 
-							<!-- illust -->
-							<figure class="participate_img">
-								<img src="images/thumbnail_kakedasu_people.jpg" alt="幼児から高校生までの子ども達のイラスト" decoding="async">
-							</figure>
-						</div>
+    <!-- Contact Us section -->
+    <section id="contactUs" class="l-section -contactUs background -white">
+        <div class="background -contact"></div>
 
-						<!-- text -->
-						<p class="textBox -mt">
-							<span>※一人で参加される場合は、</span>
-							<span>身の回りの事が自分自身でできる</span>
-							<span>お子様に限定させていただきます。</span>
-						</p>
-					</section>
+        <div class="l-inner -spS -pcS">
+            <h2 class="h2Box -mb">
+                <span class="h2Box_icon"><i class="iconSet-paper_plane"></i></span><span class="h2Box_subText font-hand">Contact Us</span><span class="h2Box_mainText">お問い合わせ</span>
+            </h2>
 
-					<!-- FREE -->
-					<section class="toUser_item">
-						<div class="background -free">
-							<h3 class="h3Box -mb">
-								<span class="h3Box_icon"><i class="iconSet-pig"></i></span>
-								<span class="h3Box_subText font-hand" style="color: #3eb382;">Participation fee</span>
-								<br>
-								<span class="h3Box_mainText">参加費用</span>
-							</h3>
-							<p class="free_read font-round" style="color: #3eb382;">
-								<span>基本的に無料で</span><br>
-								<span>ご参加いただけます。</span>
-							</p>
-							<div class="l-flex -centerStretch">
-								<!-- 01 -->
-								<div class="free_flexItem">
-									<!-- illust -->
-									<figure class="free_img -childrens">
-										<img src="images/pose_gutspose_family_set1.jpeg" alt="4人のイラスト" decoding="async">
-									</figure>
-								</div>
-								<!-- 02 -->
-								<div class="free_flexItem">
-									<!-- illust -->
-									<!-- <figure class="free_img -accompanyPerson">
-										<img src="./assets/img/illust/accompanyPerson.svg" alt="男性と女性のイラスト" decoding="async">
-									</figure> -->
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</section>			
+            <p class="textBox">
+                <span>ボランティアの参加、食材の提供などしてくださる方、</span><span>ご質問、ご相談など気軽にお問合せください。</span>
+            </p>
 
+            <div class="contact_formBox">
+                <form class="form projectForm" name="kappa-form" action="mail.php" method="post" enctype="multipart/form-data" autocomplete="on">
+                    <!-- name -->
+                    <dl class="box">
+                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="name">お名前（漢字）</label></dt>
+                        <dd class="item"><input id="name" name="お名前" type="text" value="" placeholder="例：山田 拓也" size="20" required=""></dd>
+                    </dl>
+                    <br>
 
-			<section id="support" class="l-section background -green">
-				<div class="l-inner -spS -pcS">
-					<h2 class="h2Box -mb">
-						<span class="h2Box_icon"><i class="iconSet-heart-half"></i></span><span class="h2Box_subText font-hand">To those who can cooperate and support</span><span class="h2Box_mainText"><span class="u-newLine">ご協力・ご支援</span><span class="u-newLine">いただける方へ</span></span>
-					</h2>
+                    <!-- mail -->
+                    <dl class="box">
+                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="email">メールアドレス</label></dt>
+                        <dd class="item">
+                            <input id="email" name="Email" type="email" value="" placeholder="例：sample@example.com" size="20" required="">
+                        </dd>
+                    </dl>
+                    <br>
 
-					<p class="textBox">
-						<span>「〇〇〇なかま」では一緒にボランティア活動をしていただける方、</span>
-						<span>食材などの支援、寄付をしてくださる方を募集しております。</span><br>
-						<span>子ども食堂は大勢のボランティアと</span>
-						<span>全国からお送り頂く食材のご支援で成り立っています。</span><br>
-						<span>皆さまの応援が活動を持続継続する力となります。</span>
-					</p>
-					<p class="textBox -mt">
-						<span>運営のお手伝いの参加ご希望の方は 簡単な調理、盛り付け、片付け清掃、</span>
-						<span>などなど簡単にできることが沢山あります。</span><br>
-						<span>簡単にできることが沢山ありますので是非ご参加いただき、</span>
-						<span>地域の皆様の笑顔を一つでも増やせるように</span>
-						<span>一緒に取り組みに参加してみませんか？</span>
-					</p>
-					<p class="textBox -mt">
-						<span>支援や寄付などをしていただける方はお手数をお掛けし恐縮ですが</span>
-						<span>下記のお問合せフォーム、または各種問合せ項目よりご連絡をお願いします。</span>
-					</p>
-				</div>
-			</section>	
-			
+                    <!-- tel -->
+                    <dl class="box">
+                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="tel">電話番号</label></dt>
+                        <dd class="item">
+                            <input id="tel" name="電話番号" type="tel" value="" placeholder="例：00011112222" size="20" required="">
+                        </dd>
+                    </dl>
+                    <br>
 
+                    <!-- comment -->
+                    <dl class="box">
+                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="comment">お問い合わせ内容</label></dt>
+                        <dd class="item">
+                            <textarea id="comment" name="お問い合わせ内容" rows="15" cols="30" placeholder="例：ボランティアに参加したい" required=""></textarea>
+                        </dd>
+                    </dl>
+                    <br>
 
-			<section id="contactUs" class="l-section -contactUs background -white">
-				<div class="background -contact"></div>
+                    <!-- submit -->
+                    <div class="box -center"><input class="btn -submit" type="submit" value="お問い合わせする"></div>
+                    <br>
 
-				<div class="l-inner -spS -pcS">
-					<h2 class="h2Box -mb">
-						<span class="h2Box_icon"><i class="iconSet-paper_plane"></i></span><span class="h2Box_subText font-hand">Contact Us</span><span class="h2Box_mainText">お問い合わせ</span>
-					</h2>
+                </form>
+            </div>
 
-					<p class="textBox">
-						<span>ボランティアの参加、食材の提供などしてくださる方、</span><span>ご質問、ご相談など気軽にお問合せください。</span>
-					</p>
+            <!-- text -->
+            <div class="contact_textBox">
+                <div class="contact_box">
+                    <div class="contact_icon"><i class="iconSet-paper_plane"></i></div>
+                    <p class="contact_text">
+                        内容を確認して担当者よりご連絡させていただきます。少々お時間いただきます。<br>返信がない場合、下記のアドレスまでご連絡ください。<br>
+                        <span class="contact_address font-round">〇〇〇〇@gmail.com</span>
+                    </p>
+                </div>
 
-					<div class="contact_formBox">
-						<form class="form projectForm" name="kappa-form" action="mail.php" method="post" enctype="multipart/form-data" autocomplete="on">
-							<!-- name -->
-							<dl class="box">
-								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="name">お名前（漢字）</label></dt>
-								<dd class="item"><input id="name" name="お名前" type="text" value="" placeholder="例：山田 拓也" size="20" required=""></dd>
-							</dl>
-              <br>
+                <br>
 
-							<!-- mail -->
-							<dl class="box">
-								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="email">メールアドレス</label></dt>
-								<dd class="item">
-									<input id="email" name="Email" type="email" value="" placeholder="例：sample@example.com" size="20" required="">
-								</dd>
-							</dl>
-							<br>
+                <div class="contact_box">
+                    <p class="contact_text">
+                        <span>LINEでのお問合せも対応しております。</span>
+                        <span>お気軽にご連絡ください。</span>
+                        </p><p></p>
+                        <a href="https://lin.ee/Yp2OYrv">
+                            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+                        </a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-							<!-- tel -->
-							<dl class="box">
-								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="tel">電話番号</label></dt>
-								<dd class="item">
-									<input id="tel" name="電話番号" type="tel" value="" placeholder="例：00011112222" size="20" required="">
-								</dd>
-							</dl>
-							<br>
+    <!-- Footer -->
+    <div class="l-inner -spS -pcS">
+        <figure class="header_logo" style="margin: 0 auto; text-align: center;">
+            <img src="images/icon.jpeg" alt="こども食堂のロゴ">
+        </figure>
 
-							<!-- comment -->
-							<dl class="box">
-								<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="comment">お問い合わせ内容</label></dt>
-								<dd class="item">
-									<textarea id="comment" name="お問い合わせ内容" rows="15" cols="30" placeholder="例：ボランティアに参加したい" required=""></textarea>
-								</dd>
-							</dl>
-							<br>
+        <br>
 
-							<!-- submit -->
-							<div class="box -center"><input class="btn -submit" type="submit" value="お問い合わせする"></div>
-							<br>
+        <p class="footer_text font-round">
+            <span class="u-newLine" style="color: #008000;">「〇〇〇なかま」は〇〇県〇〇市を中心に</span><br>
+            <span class="u-newLine" style="color: #008000;">「子ども食堂」をはじまりとした親御さん、お子さん、</span>
+            <span class="u-newLine" style="color: #008000;">高齢者、地域の学生さんなど誰でも利用できる</span>
+            <span class="u-newLine" style="color: #008000;">「みんなの食堂」を主に行うボランティア団体のホームページです。</span>
+        </p>
 
-						</form>
-					</div>
+        <nav class="footer_nav">
+            <ul class="footerNav font-round">
+                <li class="nav_item">
+                    <a class="nav_link" href="#about">〇〇なかまについて</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#toUser">ご利用の方へ</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#support">ご協力いただける方へ</a>
+                </li>
+            </ul>
+        </nav>
 
-					<!-- text -->
-					<div class="contact_textBox">
-						<div class="contact_box">
-							<div class="contact_icon"><i class="iconSet-paper_plane"></i></div>
-							<p class="contact_text">
-								内容を確認して担当者よりご連絡させていただきます。少々お時間いただきます。<br>返信がない場合、下記のアドレスまでご連絡ください。<br>
-								<span class="contact_address font-round">〇〇〇〇@gmail.com</span>
-							</p>
-						</div>
+        <br>
 
-						<br>
+        <div class="footer_copyright">
+            <p>食品衛生責任者講習修了済　佐藤 太郎</p>
+            <p><small>Copyright © 20XX 〇〇〇なかま All Rights Reserved.</small></p>
+        </div>
+    </div>
 
-						<div class="contact_box">
-							<p class="contact_text">
-								<span>LINEでのお問合せも対応しております。</span>
-								<span>お気軽にご連絡ください。</span>
-								</p><p></p>
-								<a href="https://lin.ee/Yp2OYrv">
-									<img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
-								</a>
-							<p></p>
-						</div>
-					</div>
-				</div>
-			</section>
+    <br>
 
-			<div class="l-inner -spS -pcS">
-				<!-- rogo -->
-				<figure class="header_logo" style="margin: 0 auto; text-align: center;">
-					<img src="images/icon.jpeg" alt="こども食堂のロゴ">
-			</figure>
+    <script>
+			document.getElementById('js-drawerBtn').addEventListener('click', function() {
+					var drawerNav = document.getElementById('drawerNav');
+					var isExpanded = this.getAttribute('aria-expanded') === 'true';
 
-			<br>
-
-				<!-- text -->
-				<p class="footer_text font-round">
-					<span class="u-newLine" style="color: #008000;">「〇〇〇なかま」は〇〇県〇〇市を中心に</span><br>
-					<span class="u-newLine" style="color: #008000;">「子ども食堂」をはじまりとした親御さん、お子さん、</span>
-					<span class="u-newLine" style="color: #008000;">高齢者、地域の学生さんなど誰でも利用できる</span>
-					<span class="u-newLine" style="color: #008000;">「みんなの食堂」を主に行うボランティア団体のホームページです。</span>
-			</p>
-
-				<!-- nav -->
-				<nav class="footer_nav">
-					<ul class="footerNav font-round">
-						<li class="nav_item">
-							<a class="nav_link" href="#about">〇〇なかまについて</a>
-						</li>
-						<li class="nav_item">
-							<a class="nav_link" href="#toUser">ご利用の方へ</a>
-						</li>
-						<li class="nav_item">
-							<a class="nav_link" href="#support">ご協力いただける方へ</a>
-						</li>
-					</ul>
-				</nav>
-
-				<!-- btn -->
-				<!-- <div class="footer_btn">
-					<div class="btn -secondary">
-						<a href="#contactUs" class="btn_link">お問い合わせ</a>
-					</div>
-				</div> -->
-
-				<br>
-
-				<!-- copyright -->
-				<div class="footer_copyright">
-					<p>食品衛生責任者講習修了済　佐藤 太郎</p>
-					<p><small>Copyright © 20XX 〇〇〇なかま All Rights Reserved.</small></p>
-				</div>
-			</div>			
-			
-			<br>
-
-			<script>
-				document.getElementById('js-drawerBtn').addEventListener('click', function() {
-						var drawerNav = document.getElementById('drawerNav');
-						var isExpanded = this.getAttribute('aria-expanded') === 'true';
-		
-						if (isExpanded) {
-								drawerNav.style.display = 'none';
-								this.setAttribute('aria-expanded', 'false');
-						} else {
-								drawerNav.style.display = 'block';
-								this.setAttribute('aria-expanded', 'true');
-						}
-				});
-		</script>		
-			</body>
+					if (isExpanded) {
+							drawerNav.style.display = 'none';
+							this.setAttribute('aria-expanded', 'false');
+					} else {
+							drawerNav.style.display = 'block';
+							this.setAttribute('aria-expanded', 'true');
+					}
+			});
+	</script>
+</body>
 </html>
