@@ -990,21 +990,18 @@ textarea {
   display: none; /* 初期状態では非表示 */
   list-style-type: none;
   padding: 0;
-  margin: 10px 0 0 0; /* 上に少し余白を追加 */
+  margin: 10px 0 0 0;
   position: absolute;
   top: 100%; /* ボタンの真下に配置 */
   left: 50%; /* 画面の中央に配置 */
-  transform: translateX(-50%); /* 左寄せから中央揃えに */
-  background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  transform: translateX(-50%);
   z-index: 1000;
-  width: 400%; /* メニューの幅を設定 */
-  max-width: 300px; /* 最大幅を設定 */
+  /* width: 80%; メニューの幅を設定 */
+  max-width: 400%; /* 最大幅を設定 */
 }
 
 .menu-items li {
-  margin: 10px 0;
+  margin-bottom: 10px; /* 各項目の間に余白を追加 */
   text-align: center; /* 中央揃え */
 }
 
@@ -1015,13 +1012,17 @@ textarea {
   padding: 10px 20px;
   display: block;
   text-align: center;
+  background-color: #ffffff;
   border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 枠に影をつける */
   white-space: nowrap; /* テキストを折り返さない */
   overflow: hidden; /* テキストが枠を超えたら隠す */
   text-overflow: ellipsis; /* テキストが長い場合は省略記号を表示 */
 }
 
 .menu-items.show {
-  display: block; /* ボタンがクリックされたときに表示 */
+  display: block; /* 表示させる */
 }
+
+
 
