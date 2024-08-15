@@ -11,43 +11,46 @@
         <h3>確認画面</h3>
         <p align="center">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
 
-        <table class="formTable">
-            <tr>
-                <th>お名前</th>
-                <td><span id="confirmName"></span></td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td><span id="confirmEmail"></span></td>
-            </tr>
-            <tr>
-                <th>電話番号</th>
-                <td><span id="confirmPhone"></span></td>
-            </tr>
-            <tr>
-                <th>お問い合わせ内容</th>
-                <td><span id="confirmMessage"></span></td>
-            </tr>
-        </table>
+        <form action="https://usebasin.com/f/de6a35dcc8f3" method="POST">
+            <table class="formTable">
+                <tr>
+                    <th>お名前</th>
+                    <td><input type="hidden" name="name" id="confirmNameInput"><span id="confirmName"></span></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="hidden" name="email" id="confirmEmailInput"><span id="confirmEmail"></span></td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td><input type="hidden" name="phone" id="confirmPhoneInput"><span id="confirmPhone"></span></td>
+                </tr>
+                <tr>
+                    <th>お問い合わせ内容</th>
+                    <td><input type="hidden" name="message" id="confirmMessageInput"><span id="confirmMessage"></span></td>
+                </tr>
+            </table>
 
-        <div class="button-container">
-            <input type="submit" value="送信する" onclick="submitForm()">
-            <input type="button" value="前画面に戻る" onclick="history.back()">
-        </div>
+            <div class="button-container">
+                <input type="submit" value="送信する">
+                <input type="button" value="前画面に戻る" onclick="history.back()">
+            </div>
+        </form>
     </div>
 
     <script>
         const formData = JSON.parse(localStorage.getItem('contactFormData'));
         document.getElementById('confirmName').textContent = formData.name;
-        document.getElementById('confirmEmail').textContent = formData.email;
-        document.getElementById('confirmPhone').textContent = formData.phone;
-        document.getElementById('confirmMessage').textContent = formData.message;
+        document.getElementById('confirmNameInput').value = formData.name;
 
-        function submitForm() {
-            // フォーム送信処理をここで実装 (外部フォームサービスなどを使用)
-            alert('フォームが送信されました');
-            localStorage.removeItem('contactFormData');
-        }
+        document.getElementById('confirmEmail').textContent = formData.email;
+        document.getElementById('confirmEmailInput').value = formData.email;
+
+        document.getElementById('confirmPhone').textContent = formData.phone;
+        document.getElementById('confirmPhoneInput').value = formData.phone;
+
+        document.getElementById('confirmMessage').textContent = formData.message;
+        document.getElementById('confirmMessageInput').value = formData.message;
     </script>
 </body>
 </html>
