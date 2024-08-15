@@ -27,7 +27,7 @@
     <script src="./drawer.js" defer></script>
 </head>
 
-<body>
+<body style="position: relative;">
     <!-- header  -->
     <header class="header font-round">
         <!-- logo -->
@@ -40,7 +40,7 @@
             <!-- glovalNav -->
             <ul class="glovalNav">
                 <li class="nav_item">
-                    <a class="nav_link" href="#about">〇〇〇◯なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
+                    <a class="nav_link" href="#about">〇〇〇なかまについて<br><i class="iconSet-chevron-circle-down"></i></a>
                 </li>
                 <li class="nav_item">
                     <a class="nav_link" href="#toUser">ご利用の方へ<br><i class="iconSet-chevron-circle-down"></i></a>
@@ -56,7 +56,7 @@
 
                 <!-- drawerNav -->
 								<ul id="drawerNav" class="menu-items">
-									<li><a href="#about">なかまについて</a></li>
+									<li><a href="#about">〇〇〇なかまについて</a></li>
 									<li><a href="#toUser">ご利用の方へ</a></li>
 									<li><a href="#support">ご協力いただける方へ</a></li>
 							</ul>
@@ -78,7 +78,7 @@
                 <h1 class="hero_title">〇〇〇なかま</h1>
                 <p class="hero_read font-round">
                     <span class="u-newLine">「〇〇〇なかま」は〇〇県〇〇市を中心に</span><br>
-                    <span class="u-newLine">「子ども食堂」はじまりとした</span>
+                    <span class="u-newLine">「子ども食堂」をはじまりとした</span>
                     <span class="u-newLine">親御さん、お子さん、</span><br>
                     <span class="u-newLine">高齢者、地域の学生さんなど誰でも利用できる</span><br>
                     <span class="u-newLine">「みんなの食堂」を主に行うボランティア団体の</span>
@@ -150,7 +150,7 @@
             <!-- textBox -figure -->
             <div class="textBox -center -mt">
                 <figure class="sns_twiterIcon">
-                    <a class="sns_link" href="https://twitter.com/kappafriendship">
+                    <a class="sns_link" href="https://twitter.com/hoge">
                         <img src="images/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="Xのアイコン" decoding="async">
                     </a>
                 </figure>
@@ -288,7 +288,7 @@
                     <!-- name -->
                     <dl class="box">
                         <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="name">お名前（漢字）</label></dt>
-                        <dd class="item"><input id="name" name="お名前" type="text" value="" placeholder="例：山田 拓也" size="20" required=""></dd>
+                        <dd class="item"><input id="name" name="お名前" type="text" value="" placeholder="例：山田 太郎" size="20" required=""></dd>
                     </dl>
                     <br>
 
@@ -320,7 +320,7 @@
                     <br>
 
                     <!-- submit -->
-                    <div class="box -center"><input class="btn -submit" type="submit" value="お問い合わせする"></div>
+                    <div class="box -center"><input class="btn -submit" type="submit" value="問い合わせする"></div>
                     <br>
 
                 </form>
@@ -343,7 +343,7 @@
                         <span>LINEでのお問合せも対応しております。</span>
                         <span>お気軽にご連絡ください。</span>
                         </p><p></p>
-                        <a href="https://lin.ee/Yp2OYrv">
+                        <a href="https://lin.ee/hoge">
                             <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
                         </a>
                     <p></p>
@@ -392,10 +392,16 @@
     <br>
 
     <script>
-			document.getElementById('js-drawerBtn').addEventListener('click', function() {
-					var drawerNav = document.getElementById('drawerNav');
-					drawerNav.classList.toggle('show'); // クラスの切り替えで表示/非表示を制御
-			});
+document.getElementById('js-drawerBtn').addEventListener('click', function() {
+    var drawerNav = document.getElementById('drawerNav');
+    drawerNav.classList.toggle('show'); // クラスの切り替えで表示/非表示を制御
+
+    // メニューの位置を調整する
+    var btnRect = this.getBoundingClientRect();
+    drawerNav.style.top = (btnRect.bottom + window.scrollY) + 'px'; // ボタンの下に表示
+});
+
+
 	</script>
 </body>
 </html>
