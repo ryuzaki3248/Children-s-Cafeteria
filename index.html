@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title>○○○なかま</title>
+    <title>こども食堂</title>
     <meta name="description" content="「〇〇〇なかま」は〇〇県〇〇市を中心に「子ども食堂」などのボランティアを行う団体のホームページです。" />
     <meta name="format-detection" content="email=no,telephone=no,address=no" />
     
@@ -283,48 +283,49 @@
                 <span>ボランティアの参加、食材の提供などしてくださる方、</span><span>ご質問、ご相談など気軽にお問合せください。</span>
             </p>
 
-            <div class="contact_formBox">
-                <form class="form projectForm" name="kappa-form" action="mail.php" method="post" enctype="multipart/form-data" autocomplete="on">
-                    <!-- name -->
-                    <dl class="box">
-                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="name">お名前（漢字）</label></dt>
-                        <dd class="item"><input id="name" name="お名前" type="text" value="" placeholder="例：山田 太郎" size="20" required=""></dd>
-                    </dl>
-                    <br>
-
-                    <!-- mail -->
-                    <dl class="box">
-                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="email">メールアドレス</label></dt>
-                        <dd class="item">
-                            <input id="email" name="Email" type="email" value="" placeholder="例：sample@example.com" size="20" required="">
-                        </dd>
-                    </dl>
-                    <br>
-
-                    <!-- tel -->
-                    <dl class="box">
-                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="tel">電話番号</label></dt>
-                        <dd class="item">
-                            <input id="tel" name="電話番号" type="tel" value="" placeholder="例：00011112222" size="20" required="">
-                        </dd>
-                    </dl>
-                    <br>
-
-                    <!-- comment -->
-                    <dl class="box">
-                        <dt class="title font-round"><span class="requiredItem -required">必須</span><label for="comment">お問い合わせ内容</label></dt>
-                        <dd class="item">
-                            <textarea id="comment" name="お問い合わせ内容" rows="15" cols="30" placeholder="例：ボランティアに参加したい" required=""></textarea>
-                        </dd>
-                    </dl>
-                    <br>
-
-                    <!-- submit -->
-                    <div class="box -center"><input class="btn -submit" type="submit" value="問い合わせする"></div>
-                    <br>
-
-                </form>
-            </div>
+						<div class="contact_formBox">
+							<form class="form projectForm" name="kappa-form" onsubmit="return goToConfirmPage();" enctype="multipart/form-data" autocomplete="on">
+									<!-- name -->
+									<dl class="box">
+											<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="name">お名前（漢字）</label></dt>
+											<dd class="item"><input id="name" name="お名前" type="text" value="" placeholder="例：山田 太郎" size="20" required=""></dd>
+									</dl>
+									<br>
+					
+									<!-- mail -->
+									<dl class="box">
+											<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="email">メールアドレス</label></dt>
+											<dd class="item">
+													<input id="email" name="Email" type="email" value="" placeholder="例：sample@example.com" size="20" required="">
+											</dd>
+									</dl>
+									<br>
+					
+									<!-- tel -->
+									<dl class="box">
+											<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="tel">電話番号</label></dt>
+											<dd class="item">
+													<input id="tel" name="電話番号" type="tel" value="" placeholder="例：00011112222" size="20" required="">
+											</dd>
+									</dl>
+									<br>
+					
+									<!-- comment -->
+									<dl class="box">
+											<dt class="title font-round"><span class="requiredItem -required">必須</span><label for="comment">お問い合わせ内容</label></dt>
+											<dd class="item">
+													<textarea id="comment" name="お問い合わせ内容" rows="15" cols="30" placeholder="例：ボランティアに参加したい" required=""></textarea>
+											</dd>
+									</dl>
+									<br>
+					
+									<!-- submit -->
+									<div class="box -center"><input class="btn -submit" type="submit" value="問い合わせする"></div>
+									<br>
+							</form>
+					</div>
+					
+					
 
             <!-- text -->
             <div class="contact_textBox">
@@ -400,8 +401,22 @@ document.getElementById('js-drawerBtn').addEventListener('click', function() {
     var btnRect = this.getBoundingClientRect();
     drawerNav.style.top = (btnRect.bottom + window.scrollY) + 'px'; // ボタンの下に表示
 });
-
-
 	</script>
+
+<script>
+	function goToConfirmPage() {
+			const formData = {
+					name: document.getElementById('name').value,
+					email: document.getElementById('email').value,
+					phone: document.getElementById('tel').value,
+					message: document.getElementById('comment').value,
+			};
+	
+			localStorage.setItem('contactFormData', JSON.stringify(formData));
+			window.location.href = 'confirm.html';
+			return false;  // フォームがサーバーに送信されるのを防ぐ
+	}
+	</script>
+	
 </body>
 </html>
