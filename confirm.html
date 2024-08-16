@@ -11,46 +11,48 @@
         <h3>確認画面</h3>
         <p align="center">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
 
-        <form action="https://usebasin.com/f/de6a35dcc8f3" method="POST">
-            <table class="formTable">
-                <tr>
-                    <th>お名前</th>
-                    <td><input type="hidden" name="name" id="confirmNameInput"><span id="confirmName"></span></td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td><input type="hidden" name="email" id="confirmEmailInput"><span id="confirmEmail"></span></td>
-                </tr>
-                <tr>
-                    <th>電話番号</th>
-                    <td><input type="hidden" name="phone" id="confirmPhoneInput"><span id="confirmPhone"></span></td>
-                </tr>
-                <tr>
-                    <th>お問い合わせ内容</th>
-                    <td><input type="hidden" name="message" id="confirmMessageInput"><span id="confirmMessage"></span></td>
-                </tr>
-            </table>
+        <table class="formTable">
+            <tr>
+                <th>お名前</th>
+                <td><span id="confirmName"></span></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><span id="confirmEmail"></span></td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td><span id="confirmPhone"></span></td>
+            </tr>
+            <tr>
+                <th>お問い合わせ内容</th>
+                <td><span id="confirmMessage"></span></td>
+            </tr>
+        </table>
 
-            <div class="button-container">
+        <div class="button-container">
+            <form action="https://usebasin.com/f/de6a35dcc8f3" method="POST">
+                <input type="hidden" name="お名前" id="nameField">
+                <input type="hidden" name="Email" id="emailField">
+                <input type="hidden" name="電話番号" id="phoneField">
+                <input type="hidden" name="お問い合わせ内容" id="messageField">
                 <input type="submit" value="送信する">
-                <input type="button" value="前画面に戻る" onclick="history.back()">
-            </div>
-        </form>
+            </form>
+            <input type="button" value="前画面に戻る" onclick="history.back()">
+        </div>
     </div>
 
     <script>
         const formData = JSON.parse(localStorage.getItem('contactFormData'));
         document.getElementById('confirmName').textContent = formData.name;
-        document.getElementById('confirmNameInput').value = formData.name;
-
         document.getElementById('confirmEmail').textContent = formData.email;
-        document.getElementById('confirmEmailInput').value = formData.email;
-
         document.getElementById('confirmPhone').textContent = formData.phone;
-        document.getElementById('confirmPhoneInput').value = formData.phone;
-
         document.getElementById('confirmMessage').textContent = formData.message;
-        document.getElementById('confirmMessageInput').value = formData.message;
+
+        document.getElementById('nameField').value = formData.name;
+        document.getElementById('emailField').value = formData.email;
+        document.getElementById('phoneField').value = formData.phone;
+        document.getElementById('messageField').value = formData.message;
     </script>
 </body>
 </html>
